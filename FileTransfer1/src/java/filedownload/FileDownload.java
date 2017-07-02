@@ -24,7 +24,7 @@ public class FileDownload extends HttpServlet {
             
 
             File file = new File(fileName);
-            if(!file.exists()){
+            if(!file.exists()||file.isDirectory()){
                 PrintWriter p = res.getWriter();
                 res.setContentType("text/html");
                 p.println("<h1>Sorry!</h1>");
