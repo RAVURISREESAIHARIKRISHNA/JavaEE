@@ -1,5 +1,8 @@
 package filedownload;
 
+//Enterprise Edition is Not Open Source,anyways Contributors of this Repository may get it for free
+//on a Request
+
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
