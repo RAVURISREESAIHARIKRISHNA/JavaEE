@@ -1,4 +1,4 @@
-All the Contetnts of this directory are Eclipse Oxygen Project made on
+All the Contetnts of this directory are Eclipse Oxygen Projects made on
 
 Java SE 9.0.1+11
 
