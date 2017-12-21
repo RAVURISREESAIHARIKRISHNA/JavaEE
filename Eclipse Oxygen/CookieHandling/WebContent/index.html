@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cookie Demo</title>
+    
+    </head>
+
+    <body>
+        <form action="AddCookie" method="POST">
+            Enter Cookie Name 
+            <input type="text" id="cookieName" name="cookieName" required="required" placeholder="cookie name">
+            <p></p>
+            Enter Cookie Value
+            <input type="text" id="cookieValue" name="cookieValue" required="required" placeholder="cookie value">
+            <p></p>
+            Enter Cookie Age
+            <input type="number" id="cookieAge" name="cookieAge" required="required" placeholder="604800">
+            <p></p>
+            <p>604800 if for 1day</p>
+            <input type="submit" value="Add Cookie">
+            <input type="reset" value="Reset">
+        </form>
+        <p></p>
+        <a href="ListCookies">List all Cookies</a>
+    </body>
+</html>
