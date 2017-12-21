@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Currency Conversion</title>
+        <script type="text/javascript">
+        function validate() {
+            var src = document.getElementById("amount").value;
+            var amount = Number(src);
+            if (isNaN(amount)) {
+                document.getElementById("amount").nodeValue = "";
+                document.getElementById("prompt").innerHTML = "Number should be entered";
+                return false;
+            }
+            else {
+                document.getElementById("prompt").innerHTML = "";
+                return true;
+            }
+        }
+
+        </script>
+    </head>
+    <body>
+        <form action="CurrencyServlet" onsubmit="return validate()" method="POST">
+            <input type="text" id="amount" name="amount" required="required" maxlength="10" placeholder="10.0">
+            <label id="prompt"></label>
+            <br><br>
+            <input type="submit" value="Submit">
+        </form>
+      <!--   <script type="text/javascript" src="WebContent/currencyValidator.js"></script>  -->
+    </body>
+</html>
